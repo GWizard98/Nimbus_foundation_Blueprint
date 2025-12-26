@@ -1,0 +1,12 @@
+pyproject.toml
+app/main.py
+nimbus_foundation_api.egg-info/._PKG-INFO
+nimbus_foundation_api.egg-info/._SOURCES.txt
+nimbus_foundation_api.egg-info/._dependency_links.txt
+nimbus_foundation_api.egg-info/._requires.txt
+nimbus_foundation_api.egg-info/._top_level.txt
+nimbus_foundation_api.egg-info/PKG-INFO
+nimbus_foundation_api.egg-info/SOURCES.txt
+nimbus_foundation_api.egg-info/dependency_links.txt
+nimbus_foundation_api.egg-info/requires.txt
+nimbus_foundation_api.egg-info/top_level.txt

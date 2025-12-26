@@ -1,0 +1,7 @@
+[project]
+name = "nimbus-foundation-api"
+version = "0.1.0"
+dependencies = [
+  "fastapi",
+  "uvicorn[standard]"
+]

@@ -1,0 +1,15 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Docker build workspace
+docker-builds/
+
+# OS junk
+.DS_Store
+._*
+
+# IDE
+.vscode/
+
