@@ -1,0 +1,33 @@
+version: "3.9"
+
+services:
+  api:
+    build: ./backend
+    volumes:
+      - ./backend:/app
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: postgresql+psycopg2://nimbus_user:nimbus_pass1270AMQG@db:5432/nimbus
+    depends_on:
+      - db
+    command: >
+      uvicorn app.main:app
+      --host 0.0.0.0
+      --port 8000
+      --reload
+
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - nimbus_db_data:/var/lib/postgresql/data
+
+volumes:
+  nimbus_db_data:
+
